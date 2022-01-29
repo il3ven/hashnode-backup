@@ -1,6 +1,6 @@
 ## Your test cases should fail
 
-Writing tests are not enough, they should fail when the application doesn't meet the requirements. In this article, we look at an example then improve its test and later end with a few guidelines for writing tests.
+Writing tests are not enough. If the tests don't fail when a bug is introduced then what's the point of writing tests. Your test should fail when the application doesn't meet the requirements. In this article, we look at an example, then improve its test and later end with a few guidelines for writing tests.
 
 ### Example
 
@@ -88,7 +88,7 @@ test('if /user/:id API works', () => {
 
 ### Code coverage is a necessary metric but not enough
 
-The first iteration of our test had good code coverage but the test still didn't catch bugs. To return the status code, a lot of lines were covered.
+In the subsequent iterations of our tests we didn't increase the code coverage. We only added more `expect` statements. Thus, a higher code coverage doesn't mean better tests.
 
 ### When a bug is found, write a test for it
 
